@@ -6,7 +6,7 @@ This is my portfolio demonstrating sample projects I have worked on. It is not c
 
 <!-- **Link to project:** http://recruiters-love-seeing-live-demos.com/ -->
 
-!Portfolio Site Preview (Portfolio-Site/portfolio-site-preview.png)
+![alt tag](Portfolio-Site/portfolio-site-preview.png)
 
 ## How It's Made:
 
