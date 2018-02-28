@@ -1,0 +1,93 @@
+body{ /* This makes all the text the same font*/
+	font-family: 'Lato', sans-serif;
+}
+
+header > h1 a{ /* 'The Foodist' - makes it red and increases size. Font weight can is set to normal to make font thinner  */
+	color: rgba(255,0,1,1);
+	font-size: 48px;
+	font-weight: normal;
+}
+
+header > h2{ /* 'Food Blog' - same as above but black and smaller */
+	color: black;
+	font-size: 27px;
+	font-weight: normal;
+	padding-left: 10px;
+	line-height: 10px;
+}
+
+nav > a{ /* 'Nav Bar Cities' - padding spreads out text sideways */
+	color: rgba(0,0,0,0.3);
+	font-size: 25px;
+	padding: 10px;
+	font-weight: normal;
+}
+
+article{ /* Paragraphs - scaled to not go past photo edges. Boder at bottom of section. Margin bottom puts space after border. */
+	width: 75%;
+	border-bottom: 1px solid;
+	border-bottom-color: rgba(0,0,0,0.2);
+	margin-bottom: 60px;
+	padding-bottom: 48px;
+	font-weight: normal;
+}
+
+h4 > a{ /* 'Next' buttons. Weighted bold*/
+	color: red;
+	float: right;
+	font-weight: bold;
+}
+
+
+article > h3{ /* 'Dates' - spaced closer to 'Food of ___'*/
+	color: rgba(0,0,0,0.3);
+	font-size: 30px;
+	font-weight: normal;
+	padding-top: 30px;
+	line-height: 15px;
+}
+
+h2 > a{ /* 'Food of NYC' and 'Food of Paris' */
+	color: black;
+	font-size: 32px;
+	font-weight: normal;
+	line-height: 10px;
+}
+
+img{ /* Images */
+	width: 100%;
+}
+
+
+p{ /* Paragraph colors and text thickness */
+	color: rgba(0,0,0,0.6);
+	font-weight: normal;
+}
+
+
+a{ /* All links - removes underlines*/
+	text-decoration: none;
+	font-weight: normal;
+}
+
+article p:first-letter{ /* */
+	font-size: 600%;
+	float: left;
+	color: rgba(0,0,0,0.3);
+	font-weight: normal;
+}
+
+footer nav a{ /* Footer color and spacing */
+	color: red;
+	padding: 10px;
+	font-weight: normal;
+}
+
+
+
+nav a{ /* Puts underlines back for 'Nav' level links*/
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+

@@ -1,0 +1,850 @@
+/*
+Project Name: Level Ground - Responsive
+Client: Level Ground MMA
+Author: Lilly Percival
+Developer @RC in Boston
+
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     background:
+  linear-gradient(63deg, #999 23%, transparent 23%) 7px 0,
+  linear-gradient(63deg, transparent 74%, #999 78%),
+  linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%),
+#444;
+/*Sick background from:  http://lea.verou.me/css3patterns/#stairs  */
+      background-size: 16px 48px;
+     font-size: 18px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+     background-color: #8E8E8E;
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
+section{
+  margin-bottom: 2%;
+}
+
+button{
+  background-color: orange;
+  padding: 5px 5px 5px 25px;
+  border: 1px solid #666;
+}
+
+/*Header and components*/
+.header{
+  background-color: black;
+  width: 100%;
+}
+
+.header > .hero{
+ float: left;
+  background-image: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  position: relative;
+  top: -20px;
+}
+
+.nav1{
+  float: left;
+  text-decoration: none;
+  float: left;
+  position: relative;
+  top: -670px;
+  color: orange;
+  font-weight: bold;
+  font-size: 40px;
+  background-color: grey;
+  border-radius: 15px;
+}
+
+.nav2{
+  float: left;
+  text-decoration: none;
+  float: left;
+  position: relative;
+  top: -670px;
+  color: orange;
+  font-weight: bold;
+  font-size: 40px;
+  background-color: grey;
+  border-radius: 15px;
+  margin-left: 4%;
+}
+
+.header nav{
+  width: 100%;
+  float: left;
+}
+
+
+
+.header nav .right li a button{
+  text-decoration: none;
+  float: right;
+  position: relative;
+  top: -675px;
+  padding-right: 20px;
+  margin-right: 2%;
+}
+
+.header nav a .logo{
+  background-color: gray;
+  position: absolute;
+  left: 38%;
+  right: 50%;
+  top: 0;
+  max-width: 300px;
+  max-height: 300px;
+  min-width: 100px;
+  min-height: 100px;
+}
+
+.header nav.right{
+}
+
+.header nav.right a{
+float: right;
+}
+
+
+
+/*Hero .leftBlock under initial header*/
+.grit{
+  background-color: rgba(255,255,255,0.7);
+  width: 96%;
+  margin-left: 2%;
+}
+.watchVideo{
+    position: relative;
+    top: 260px;
+    left: 850px;
+}
+.grit h2,.why h2,.visit h3,.volunteer h2{
+  text-align: center;
+  color: orange;
+}
+
+.gritty{
+  text-align: center;
+  padding: 3%;
+  position: relative;
+  top: -20px;
+}
+
+.grit h2 a,span{
+  text-align: center;
+  color: orange;
+  text-decoration: none;
+  position: relative;
+  left: 430px;
+  top: -20px;
+}
+
+
+.grit h2 a span{
+
+}
+
+
+/*.leftBlock below header and hero*/
+.why{
+  background-color: rgba(255,255,255,0.7);
+  width: 96%;
+  margin-left: 2%;
+}
+
+.why h2{
+  position: relative;
+  top: 20px;
+}
+
+.why p{
+  text-align: center;
+  padding: 3%;
+}
+
+
+/*.leftBlock with two content .leftBlocks - Gym Visits*/
+.visit{
+  background-color: rgba(255,255,255,0.7);
+  width: 96%;
+  margin-left: 2%;
+  float: left;
+}
+
+.visit .gym{
+  width: 48%;
+float: left;
+margin-left:2%;
+}
+
+.visit .gym img{
+  padding-top: 15px;
+  margin-left: 215px;
+  border: 3px solid orange;
+  margin-top: 15px;
+}
+
+.visit .gym p{
+  text-align: center;
+  padding: 3%;
+}
+
+.visit .gym button{
+  text-decoration: none;
+  position: relative;
+  top: -10px;
+  padding-right: 20px;
+  margin-left: 40%;
+}
+
+.visit .you{
+  width: 48%;
+  float: left;
+}
+
+.visit .you img{
+  margin-top: 15px;
+  padding-top: 15px;
+  margin-left: 215px;
+  border: 3px solid orange;
+}
+
+.visit .you p{
+  text-align: center;
+  padding: 3%;
+}
+
+.visit .you button{
+  text-decoration: none;
+  position: relative;
+  top: -10px;
+  padding-right: 20px;
+  margin-left: 44%;
+}
+
+
+/*Volunteer .leftBlock*/
+.volunteer{
+  background-color: rgba(255,255,255,0.7);
+  width: 96%;
+  margin-left: 2%;
+  float: left;
+}
+
+
+.volunteer p{
+  text-align: center;
+  padding: 3%;
+}
+
+.volunteer button{
+  text-decoration: none;
+  position: relative;
+  top: -10px;
+  padding-right: 20px;
+  margin-left: 46%;
+}
+
+
+/*Footer*/
+.footer{
+  width: 100%;
+  clear: both;
+  background-color: rgba(255,255,255,0.5);
+}
+
+
+/*Left side of footer*/
+.footer .leftBlock{
+  width: 50%;
+  float: left;
+  font-size: small;
+  text-decoration: none;
+  text-align: left;
+}
+
+
+.footer .leftBlock .d .social .fbicon a i{
+  float: left;
+}
+
+
+.social{
+  float: left;
+  list-style: none;
+}
+
+.footer .leftBlock .d {
+  float: left;
+}
+
+.footer .leftBlock .d ul li a .tweet{
+  float: left;
+}
+
+.footer .leftBlock .d ul li a .mail{
+ float: left;
+}
+
+.footer .leftBlock .footNav span h3 {
+  font-size: small;
+  text-align: left;
+  position: relative;
+  left: 40%;
+  top: 20px;
+  color: orange;
+}
+
+
+.siteMap{
+  text-decoration: none;
+  color: black;
+  font-size: small;
+  position: relative;
+}
+
+.site{
+  position: relative;
+  left: -10%;
+}
+
+.footnav h3{
+  left-margin: 100px;
+}
+
+.footer .text2{
+    text-decoration: none;
+    color: black;
+    margin-left: 15%;
+    margin-top: 2px;
+    text-align: left;
+}
+
+/*Right side of footer*/
+.footer .rightBlock{
+  width: 50%;
+  float: left;
+  text-align: right;
+}
+
+/*Contact and Address block*/
+
+.footer .rightBlock .lg,.mma,.a,.b,.c{
+  font-size: small;
+}
+
+.footer .rightBlock .mma{
+  font-size: small;
+  margin: 0 0 0 0;
+}
+
+.footer .rightBlock .a{
+  font-size: small;
+  margin: 0 0 0 0;
+}
+
+.footer .rightBlock .b{
+  font-size: small;
+  margin: 0 0 0 0;
+}
+
+.footer .rightBlock .c{
+  font-size: small;
+  margin: 0 0 0 0;
+}
+
+
+/*Last bottom section of footer*/
+
+.footer .bottom{
+  clear: both;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.footer .bottom .legal{
+  font-size: small;
+}
+
+.footer .bottom .fl{
+  width: 4%;
+  height: auto;
+  float: right;
+  position: relative;
+  top: -110px;
+ }
+
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     background:
+  linear-gradient(63deg, #999 23%, transparent 23%) 7px 0,
+  linear-gradient(63deg, transparent 74%, #999 78%),
+  linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%),
+#444;
+/*Sick background from:  http://lea.verou.me/css3patterns/#stairs  */
+      background-size: 16px 48px;
+     font-size: 18px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+     background-color: #8E8E8E;
+}
+
+/* Center the container */
+#container {
+  width: 960px;
+  margin: auto;
+}
+
+
+section{
+  margin-bottom: 2%;
+}
+
+button{
+  background-color: orange;
+  padding: 5px 5px 5px 25px;
+  border: 1px solid #666;
+}
+
+
+/*Header and components*/
+.header{
+  background-color: black;
+  width: 100%;
+}
+
+.header > .hero{
+ float: left;
+  background-image: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  position: relative;
+  top: -20px;
+}
+
+.classNav1{
+  float: left;
+  text-decoration: none;
+  float: left;
+  position: absolute;
+  top: 10px;
+  color: orange;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.classNav2{
+  float: left;
+  text-decoration: none;
+  float: left;
+  position: absolute;
+  top: 60px;
+  color: orange;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 0;
+}
+
+.header nav{
+  width: 100%;
+  float: left;
+}
+
+
+
+.header nav .right li a button{
+  text-decoration: none;
+  float: right;
+  position: absolute;
+  top: 5px;
+  right: -18px;
+  padding-right: 20px;
+}
+
+.header nav a .logo{
+  background-color: gray;
+  position: absolute;
+  left: 38%;
+  right: 50%;
+  top: 0;
+  max-width: 150px;
+  max-height: 150px;
+  min-width: 100px;
+  min-height: 100px;
+}
+
+
+.header nav.right a{
+float: right;
+}
+
+
+
+/*Hero .leftBlock under initial header*/
+.grit{
+  background-color: rgba(255,255,255,0.5);
+  width: 96%;
+  margin-left: 2%;
+}
+
+
+.grit h2,.why h2,.visit h3,.volunteer h2{
+  text-align: center;
+  color: orange;
+
+}
+
+.gritty{
+  text-align: center;
+  padding: 3%;
+  position: relative;
+  top: -20px;
+}
+
+.grit h2 a,span{
+  text-align: center;
+  color: orange;
+  text-decoration: none;
+  position: relative;
+  left: 430px;
+  top: -20px;
+}
+
+
+/*.leftBlock below header and hero*/
+.why{
+  display: none;
+}
+
+.why h2{
+  position: relative;
+  top: 20px;
+}
+
+.why p{
+  text-align: center;
+  padding: 3%;
+}
+
+
+/*.leftBlock with two content .leftBlocks - Gym Visits*/
+.visit{
+  background-color: rgba(255,255,255,0.5);
+  width: 96%;
+  margin-left: 2%;
+  float: left;
+}
+
+.visit .gym{
+  width: 100%;
+  padding: 2%;
+margin-left:2%;
+}
+
+.visit .gym img{
+display: none;
+}
+
+.visit .gym p{
+  text-align: center;
+  padding: 3%;
+}
+
+.visit .gym button{
+  text-decoration: none;
+  position: relative;
+  top: -10px;
+  padding-right: 20px;
+  margin-left: 30%;
+}
+
+.visit .you{
+  width: 50%;
+  display: none;
+}
+
+.visit .you img{
+  margin-top: 15px;
+  padding-top: 15px;
+  position: center;
+  border: 3px solid orange;
+  display: none;
+}
+
+.visit .you p{
+  text-align: center;
+  display: none;
+}
+
+.visit .you button{
+  text-decoration: none;
+  position: absolute;
+  top: -10px;
+  padding-right: 15px;
+  margin-left: 30%;
+  display: none;
+}
+
+
+/*Volunteer .leftBlock*/
+.volunteer{
+  background-color: rgba(255,255,255,0.5);
+  width: 96%;
+  margin-left: 2%;
+  float: left;
+}
+
+
+.volunteer p{
+  text-align: center;
+  padding: 3%;
+}
+
+.volunteer button{
+  text-decoration: none;
+  position: relative;
+  top: -10px;
+  padding-right: 20px;
+  margin-left: 30%;
+}
+
+
+/*Footer*/
+.footer{
+  width: 100%;
+  clear: both;
+  background-color: rgba(255,255,255,0.5);
+}
+
+
+/*Left side of footer*/
+.footer .leftBlock{
+  width: 50%;
+  float: left;
+  font-size: small;
+  text-decoration: none;
+  text-align: left;
+}
+
+
+.footer .leftBlock .d .social .fbicon a i{
+  float: left;
+}
+
+
+.social{
+  float: left;
+  list-style: none;
+}
+
+.footer .leftBlock .d {
+  float: left;
+}
+
+.footer .leftBlock .d ul li a .tweet{
+  float: left;
+}
+
+.footer .leftBlock .d ul li a .mail{
+ float: left;
+}
+
+.footer .leftBlock .footNav span h3 {
+  font-size: small;
+  text-align: left;
+  position: relative;
+  left: 40%;
+  top: 20px;
+  color: orange;
+}
+
+
+.siteMap{
+  text-decoration: none;
+  color: black;
+  font-size: small;
+  position: relative;
+}
+
+.site{
+  position: relative;
+  left: -10%;
+}
+
+.footnav h3{
+  left-margin: 100px;
+}
+
+.footer .text2{
+    text-decoration: none;
+    color: black;
+    margin-left: 15%;
+    margin-top: 2px;
+    text-align: left;
+}
+
+/*Right side of footer*/
+.footer .rightBlock{
+  width: 50%;
+  float: left;
+  text-align: right;
+}
+
+/*Contact and Address block*/
+
+.footer .rightBlock .lg,.mma,.a,.b,.c{
+  font-size: small;
+}
+
+.footer .rightBlock .mma{
+  font-size: small;
+  margin: 0 0 0 0;
+}
+
+.footer .rightBlock .a{
+  font-size: small;
+  margin: 0 0 0 0;
+}
+
+.footer .rightBlock .b{
+  font-size: small;
+  margin: 0 0 0 0;
+}
+
+.footer .rightBlock .c{
+  font-size: small;
+  margin: 0 0 0 0;
+}
+
+
+/*Last bottom section of footer*/
+
+.footer .bottom{
+  clear: both;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.footer .bottom .legal{
+  font-size: small;
+}
+
+.footer .bottom .fl{
+  width: 4%;
+  height: auto;
+  float: right;
+  position: relative;
+  top: -80px;
+ }
+}
