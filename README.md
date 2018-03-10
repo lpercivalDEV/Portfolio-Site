@@ -26,4 +26,7 @@ During the creation of all of these projects, I learned how to implement symanti
 ## Examples:
 Take a look at these couple examples that I have in my own portfolio:
 
-coming soon....
+**Matching Card Game:**  https://github.com/lpercivalDEV/matching-card-game
+**Rock Paper Scissors Game:** https://github.com/lpercivalDEV/rock-paper-scissors
+**Lyric Ranker:** https://github.com/lpercivalDEV/noname-telefone-lyric-ranker
+**Instagram API:** https://github.com/lpercivalDEV/instagram-api
