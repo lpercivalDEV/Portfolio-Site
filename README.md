@@ -4,7 +4,7 @@
 # Portfolio Site - WIP
 This is my portfolio demonstrating sample projects I have worked on. It is not complete as there are many more projects I am in the process of completing/updating/adding to my site. But this simple portfolio should give an overall summary of my skills and experience as a full stack web developer.
 
-<!-- **Link to project:** http://recruiters-love-seeing-live-demos.com/ -->
+**Link to project:** http://lillythedev.bitballoon.com
 
 ![Portfolio Site Preview](https://github.com/lpercivalDEV/Portfolio-Site/blob/master/portfolio-site-preview.png)
 
