@@ -24,7 +24,7 @@ The more interactive examples include a photography carousel featuring photos fr
 During the creation of all of these projects, I learned how to implement symantically correct HTML, CSS, and JavaScript in accordance with the latest standards and best practices.
 
 ## Examples:
-Take a look at these couple examples that I have in my own portfolio:
+Take a look at these couple examples that I have of other projects I've worked on:
 
 **Matching Card Game:**  https://github.com/lpercivalDEV/matching-card-game
 
