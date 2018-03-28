@@ -1,0 +1,203 @@
+/*
+Project Name: Calculator
+Client: Leon Noel
+Author: Lilly Percival
+Developer @RC in Boston
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    background-color: black;
+     color: #000;
+     font-size: 35px;
+     line-height: 1.4;
+     font-family: 'VT323', monospace;
+     background-image: url("https://media.giphy.com/media/QZCLEZ9YNpEMU/giphy.gif");
+     background-repeat: no-repeat;
+     background-position: center center;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+
+/*******************************************/
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.robot{
+  color:#58B03B;
+  font-size: 60px;
+  text-align: center;
+}
+
+.inputs{
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#valueOne{
+background-color: color:#B4DA90;
+  border-radius: 8px;
+  color:#46B03B;
+  height: 70px;
+  width: 270px;
+  font-size: 25px;
+}
+
+#valueTwo{
+  background-color: color:#B4DA90;
+  border-radius: 8px;
+  color:#46B03B;
+  height: 70px;
+  width: 270px;
+  font-size: 25px;
+}
+#result{
+  color:#58B03B;
+  font-size: 60px;
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+  margin-top: 40px;
+
+}
+
+.container{
+width: 100%;
+align-content: center;
+}
+
+
+.buttons{
+  text-align: center;
+}
+
+
+#addition{
+  margin-left:0;
+  width: 60px;
+  height:40px;
+  font-size: 30px;
+  color:#256020;
+}
+#subtraction{
+  margin-left: 7%;
+  width: 60px;
+  height:40px;
+  font-size: 30px;
+  color:#256020;
+}
+#multiplication{
+  margin-left: 7%;
+  width: 60px;
+  height:40px;
+  font-size: 30px;
+  color:#256020;
+}
+#division{
+  margin-left: 7%;
+  width: 60px;
+  height:40px;
+  font-size: 26px;
+   color:#256020;
+}
+
+
+
+
+
+
+/*****************************************
+/* MEDIA QUERIES
+/******************************************
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {}
+
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {}
+
+/*/*/
