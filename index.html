@@ -1,87 +1,664 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<!-- <meta name="description" content="Your description goes here"> -->
-    	<!-- <meta name="keywords" content="one, two, three"> -->
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
-    	<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
-<!-- responsive every 100px -->
-<!-- mobile first -->
-<!-- kiss -->
-		<title>Lilly the Dev</title>
-		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<section class="container">
-				<section class="about">
-					<h1>Hi, I'm Lilly and I can solve your problems with code! </h1>
-					<p>I'm a full stack developer with the skills to build functional, interactive, and beautiful websites and applications. I'm trained in the tools that will keep your site relevant. I use the latest and greatest versions of programming languages and align my methods with best practices to keep your site or application top shelf. If you need someone to translate your ideas into HTML, CSS, or JavaScript - you've come to the right place.</p>
-					<h5>HTML5, CSS3, JavaScript (ES6), SCRUM, MongoDB, Node.js, React.js</h5>
-					<!-- I must maintain. -->
-					<!-- Who's world is this? It's mine! It's mine! -->
-					<!-- Do it for everyone who didn't make it here. -->
-				</section>
-				<section class="projects">
-					<section>
-						<a class="slots" href="safariSlots/index.html" alt="Safari Slots Project">
-							<section><img class="slotsPic" src="safariSlotsPreview.png" alt="projectPreview"></section>
-							<p>A simple interactive site where players can place bets and play a slot machine style game. Uses HTML, CSS, and JavaScript.</p>
 
-						</a>
-						</section>
-					<section>
-						<a class="carousel" href="carousel/index.html" alt="Photography Carousel Project">
-							<section><img class="carouselPic" src="carouselPreview.png" alt="projectPreview"></section>
-							<p>An interactive photography carousel where users can view photos in a slideshow fashion. Uses HTML, CSS, and JavaScript.</p>
-						</a>
-						</section>
-					<section>
-						<a class="foodist" href="foodist/index.html" alt="Food Blog Project">
-							<section><img class="foodPic" src="foodistPreview.png" alt="projectPreview"></section>
-							<p>This is a sample food blog using only HTML and CSS.</p>
-						</a>
-						</section>
-					<section>
-						<a class="levelground" href="levelGround/index.html" alt="Level Ground Project">
-							<section><img class="lgPic" src="levelGroundPreview.png" alt="projectPreview"></section>
-							<p>A sample site for a gym using HTML and CSS</p>
-						</a>
-					</section>
-					<section>
-						<a class="calculator" href="#" alt="Calculator Project">
-							<section><img class="soonPic" src="comingSoon.gif" alt="projectPreview"></section>
-							<p class="wrench"><i class="fas fa-wrench"></i><span>...coming soon...</span></p>
-						</a>
-						</section>
-					<section>
-						<a class="responsiveLayout" href="#" alt="Responsive Layout Example">
-							<section><img class="soonPic" src="comingSoon.gif" alt="projectPreview"></section>
-							<p class="wrench"><i class="fas fa-wrench"></i><span>...coming soon...</span></p>
-						</a>
-					</section>
-					<section>
-						<a class="toDoList" href="#" alt="To Do List Project">
-							<section><img class="soonPic" src="comingSoon.gif" alt="projectPreview"></section>
-							<p class="wrench"><i class="fas fa-wrench"></i><span>...coming soon...</span></p>
-						</a>
-					</section>
-				</section>
-				<section class="contact">
-					<p>If you're ready to take the next steps to legitimize and elevate your business, portfolio or application -- contact me. I will help you design and build a site/app that is effective, beautiful, unique, and most importantly - a site that is truly yours.</p>
-					<span><a class="github" href="https://github.com/lpercivalDEV" alt="github"><i class="fab fa-github"></i></a></span>
-					<span><a class="linkedin" href="https://www.linkedin.com/in/lillypercival" alt="linkedIn"><i class="fab fa-linkedin-in"></i></a></span>
-					<span><a class="email" href="mailto:lpercival.dev@gmail.com" alt="email address: lpercival.dev@gmail.com"><i class="fas fa-envelope"></i></a></span>
-					<h6>Address:</h6>
-					<p>50 Milk Street</p>
-					<p>17th Floor</p>
-					<p>Boston, MA 02109</p>
-				</section>
-		</section>
-<!-- external JavaScript link -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="js/main.js"></script>
-	</body>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Lilly Percival - 2018 Portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script> -->
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Lilly the Dev</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">Highlights</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">Welcome to my code lab!</div>
+          <div class="intro-heading text-uppercase"></div>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">FIND OUT MORE</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Services</h2>
+            <h3 class="section-subheading text-muted">Full-Stack, Creative, and Customer Focused Designs. </h3>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-database fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Full Stack Development</h4>
+            <p class="text-muted">From databases and server interactions, to front end design and content creation - I'll solve your problems through code, using best practices to create applications that are not only functional but well designed.</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-mobile fa-stack-2x fa-inverse"></i>
+              <!-- <i class="fa fa-laptop fa-stack-1x "></i> -->
+            </span>
+            <h4 class="service-heading">Responsive Design</h4>
+            <p class="text-muted">I make creative and adaptable designs and applications that can function and look good on an array of devices. Whether desktop or mobile, I got you!</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-star fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Customer Satisfaction</h4>
+            <p class="text-muted">I'm not happy until my customer is happy. I work hard to make sure that I deliver what the customer wants. My job is bridging the gap between design and tech and to make the experience enjoyable and anxiety free.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Portfolio</h2>
+            <h2 class="section-subheading text-muted"><a href="https://github.com/lpercivalDEV"><i class="fa fa-github"></i></a></h3>
+                <h3 class="section-subheading text-muted">Here you can find examples of my work. If you'd like to check out more of my projects, check out my github!</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/01-thumbnail.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Foodist</h4>
+              <p class="text-muted">Sample food blog.<li class="list-inline-item">
+                 <a href="https://github.com/lpercivalDEV/foodist">
+                   <i class="fa fa-github"></i>
+                 </a>
+               </li></p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/02-thumbnail.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Responsive Layouts</h4>
+              <p class="text-muted">Responsive site for varied screen sizes.</p>
+              <a href="https://github.com/lpercivalDEV/responsive-layouts">
+                <i class="fa fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/03-thumbnail.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Calculator</h4>
+              <p class="text-muted">A simple four function calculator that can operate upon two numbers. Additon, subtraction, multiplication, and division are supported.</p>
+              <a href="https://github.com/lpercivalDEV/calculator">
+                <i class="fa fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Matching Card Game</h4>
+              <p class="text-muted">A matching card game app that can run on a local server.</p>
+              <a href="https://github.com/lpercivalDEV/matching-card-game">
+                <i class="fa fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/05-thumbnail.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Full-Stack Coffee House App</h4>
+              <p class="text-muted">Order logging app for a coffee house</p>
+              <a href="https://github.com/lpercivalDEV/coffee-app-with-login">
+                <i class="fa fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/hourglass.gif" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Full-Stack Vending Machine</h4>
+              <p class="text-muted">...coming soon...</p><p class="text-muted">Virtual vending machine app with login and database.</p>
+              <a href="#">
+                <i class="fa fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">About</h2>
+            <h3 class="section-subheading text-muted">Citizen of Earth. Curious. Thinker. Maker.</h3>
+          </div>
+        </div>
+
+        <!-- Previous Work Experience -->
+        <section class="py-5">
+          <div class="container">
+            <h3 class="past-employers">Professional Experience</h3>
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <a href="https://www.raytheon.com/">
+                  <img class="img-fluid d-block mx-auto pic" src="img/logos/rtnlogo.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <a href="https://weitzlab.seas.harvard.edu/">
+                  <img class="img-fluid d-block mx-auto pic" src="img/logos/harvardlogo.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <a href="https://wyss.harvard.edu/">
+                  <img class="img-fluid d-block mx-auto pic" src="img/logos/wysslogo.png" alt="">
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <a href="https://www.wegowise.com/about">
+                  <img class="img-fluid d-block mx-auto pic" src="img/logos/wegologo.png" alt="">
+                </a>
+              </div>
+              <!-- <div class="col-md-3 col-sm-6">
+                <a href="https://www.resilientcoders.org/">
+                  <img class="img-fluid d-block mx-auto pic" src="img/logos/rclogo.jpg" alt="">
+                </a>
+              </div> -->
+            </div>
+          </div>
+        </section>
+        <p></p>
+        <!-- continuation of about timeline -->
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Once there was a girl...</h4>
+                    <h5 class="subheading">= Background =</h5>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">San Francisco born thinker. Florida raised nerd. Boston forged innovator. I've been places and I'm going places!</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>...who wanted to evolve...</h4>
+                    <h5 class="subheading">= Experience =</h5>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Fortune 500 companies. Startups. Research. I've done a lot and I've learned a lot. I'm always growing. I love learning.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>...her thoughts + actions...</h4>
+                    <h5 class="subheading">= Resilient Coders =</h5>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">14 intense weeks. 40+ websites and applications created. 15+ tech meetups attended. 7+ programming languages and frameworks learned. 1 goal - to succeed. Experience - priceless.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>...to help herself and others succeed.</h4>
+                    <h5 class="subheading">= Future =</h5>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">I will break the cycle of poverty I was born into. I will send the ladder back down when I reach the top. I will create opportunities for change and growth through my work. I am indebted to those who struggled before me, and I will not stop until the palying field is leveled.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                      <img class="rounded-circle img-fluid" src="img/about/confetti.gif" alt="">
+                      <h4 class="fa-stack-1x text-primary">Be Part
+                        <br>Of My
+                        <br>Story!</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights -->
+    <section class="bg-light" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Highlights</h2>
+            <h3 class="section-subheading text-muted">Awards, honors, achivements</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/internship.png" alt="">
+              <h4>2 Internship Extensions</h4>
+              <p class="text-muted">My work ethic and quality of work resulted in me being extended at two of my internships.</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/hack.png" alt="">
+              <h4>MIT Hack for Inclusion Team Lead</h4>
+              <p class="text-muted">I was selected to be team lead at MIT's Hack for Inclusion event. Our team was tasked with improving inclusion in the workplace through technology.</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/libreplanetlogo.png" alt="">
+              <h4>Libre Planet 2018 Volunteer</h4>
+              <p class="text-muted">Provided audio and visual assistance during the 2018 Libre Planet conference and awards ceremony.</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/reu.png" alt="">
+              <h4>Harvard REU Participant</h4>
+              <p class="text-muted">Selected to participate in Harvard's REU program. I was placed in the SEAS Weitz Lab where I conducted experiments on soft materials and their shear properties.</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/award.png" alt="">
+              <h4>Raytheon Individual Achievement Award</h4>
+              <p class="text-muted">I was awarded an Individual Achievement award for my work during my internship at Raytheon. My initial three month internship was extended to an additional year.</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/school.png" alt="">
+              <h4>Dean's List and Phi Theta Kappa Honor Society</h4>
+              <p class="text-muted">Dean's list 2013/14. Member of the Phi Theta Kappa Honor Society</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h1 class="section-heading text-uppercase">Hire Me!</h1>
+                <p class="large text-muted">I'm a hard worker. I take pride in my work. I belive actions are louder than words. I like solving interesting problems. I love sharing my knowledge and helping others succeed. If you like what you see, let's talk! </p>
+            <a href="mailto:lpercival.dev@gmail.com"><h2>Email Me</h2></a>
+            <a href="https://cdn2.hubspot.net/hubfs/2253693/resumes/2018A/resume_lillypercival.pdf"><h2>View My Resume</h2></a>
+            <a href=" https://www.linkedin.com/in/lillypercival"><h2>View My LinkedIn</h2></a>
+            <a href="https://www.resilientcoders.org/bootcamp/roster/lilly-percival"><h2>View My Profile for Resilient Coders </h2></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">Copyright &copy; Lilly Percival 2018</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://twitter.com/Lilly_the_Dev">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/lpercivalDEV">
+                  <i class="fa fa-github"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/lillypercival/">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Foodist</h2>
+                  <p class="item-intro text-muted"><a href="foodist/index.html">Live Demo</a> </p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.png" alt="">
+                  <p>This is a sample food blog I made to showcase simple HTML and CSS skills using HTML5 and CSS3.</p>
+                  <ul class="list-inline">
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Responsive Layout</h2>
+                  <p class="item-intro text-muted"><a href="responsive-layouts/index.html">Live Demo</a> </p>
+                  <p class="item-intro text-muted">A simple site made to showcase responsive skills.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.png" alt="">
+                  <p>I made this simple site to showcase that I can adapt website layouts to different sized screens. The content and hierarchy shift as the screen size decreases. Play around with this site by messing with the width of the window.</p>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Calculator</h2>
+                  <p class="item-intro text-muted"><a href="calculator/index.html">Live Demo</a> </p>
+                  <p class="item-intro text-muted">Four function calculator for two inputs.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.png" alt="">
+                  <p>A simple four function calculator that can operate upon two numbers. Additon, subtraction, multiplication, and division are supported. Tech used: HTML5, CSS3, Javascript, jQuery</p>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Matching Card Game</h2>
+                  <p class="item-intro text-muted"><a href="#">Live Demo Coming Soon</a> </p>
+                  <p class="item-intro text-muted">Simple 10 card matching game</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
+                  <p>This is a project I created while learning about APIs and advanced JavaScript. This simple game allows users to match cards with different animals on them. As cards are matched, they are removed from the game. You can run this app yourself on a local server by cloning/downloading my github files and running on your terminal.</p>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Coffee House App</h2>
+                  <p class="item-intro text-muted"><a href="#">Live Demo Coming Soon</a> </p>
+                  <p class="item-intro text-muted">Coffee House App with Login</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.png" alt="">
+                  <p>This is a node.js and express application I made that allows baristas to login or create an account, submit customer orders, and check orders off as complete. You can run this app yourself on a local server by cloning/downloading my github files and running on your terminal.</p>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Full-Stack Vending Machine App</h2>
+                  <p class="item-intro text-muted"><a href="#">Live Demo Coming Soon</a> </p>
+                  <p class="item-intro text-muted">Virtual Vending Machine</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/hourglass.gif" alt="">
+                  <p>...coming soon...</p>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+  </body>
+
 </html>
